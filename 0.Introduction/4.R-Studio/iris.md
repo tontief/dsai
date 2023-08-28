@@ -1,30 +1,24 @@
----
-title: "Fisher's Iris Dataset"
-author: "rkofler"
-date: "2023-08-28"
-output:
-  github_document: default
-  ioslides_presentation: default
-  beamer_presentation: default
-  slidy_presentation: default
-classoption: "aspectratio=169"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Fisher’s Iris Dataset
+================
+rkofler
+2023-08-28
 
 ## IRIS
 
-![Iris, Weinviertel](/home/kofler/projects/schule/2023.24/DSAI/Rmarkdown/images/iris_grw.jpg){height="20%"}
+<figure>
+<img
+src="/home/kofler/projects/schule/2023.24/DSAI/Rmarkdown/images/iris_grw.jpg"
+style="height:20.0%" alt="Iris, Weinviertel" />
+<figcaption aria-hidden="true">Iris, Weinviertel</figcaption>
+</figure>
 
 ## Loading data (iris flowers) from an included dataset
 
-loading a dataset (package 'datasets' is a base package)
+loading a dataset (package ‘datasets’ is a base package)
 
 `library('datasets')`
 
-show table's headers
+show table’s headers
 
 `head(iris)`
 
@@ -53,23 +47,21 @@ show table's headers
 
 `?iris`
 
-```         
-Description:
-This famous (Fisher's or Anderson's) iris data set gives the
-measurements in centimeters of the variables sepal length and
-width and petal length and width, respectively, for 50 flowers
-from each of 3 species of iris.  The species are _Iris setosa_,
-_versicolor_, and _virginica_.
-```
+    Description:
+    This famous (Fisher's or Anderson's) iris data set gives the
+    measurements in centimeters of the variables sepal length and
+    width and petal length and width, respectively, for 50 flowers
+    from each of 3 species of iris.  The species are _Iris setosa_,
+    _versicolor_, and _virginica_.
 
 ## Classification of unknown data
 
--   data screening
--   classification of a flower
+- data screening
+- classification of a flower
 
 ## data summary - get a quick overview
 
-```{r summary, echo = TRUE}
+``` r
 # summary(iris)
 ```
 
@@ -89,6 +81,8 @@ _versicolor_, and _virginica_.
 
 ## Visualize data - the boxplot
 
-```{r boxplot}
+``` r
 boxplot(iris)
 ```
+
+![](iris_files/figure-gfm/boxplot-1.png)<!-- -->
